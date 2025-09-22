@@ -1,23 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>My First Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tweets</title>
+  <style>
+
+    /* Navbar styling */
+    header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+    }
+
+    header ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    header ul li a:hover {
+      color: #1DA1F2;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    /* Button styling */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1DA1F2;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #0d8ddb;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>My Tweets</h1>
-  
-  <!-- Embedded tweet example -->
-  <blockquote class="twitter-tweet">
-    <p lang="en" dir="ltr">
-      Just setting up my Twitter. #myfirstTweet
-    </p>&mdash; Twitter (@Twitter) 
-    <a href="https://twitter.com/Twitter/status/20?ref_src=twsrc%5Etfw">March 21, 2006</a>
-  </blockquote>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-  <!-- Link back to homepage -->
-  <p><a href="index.html">Go back to Homepage</a></p>
+  <!-- Header with horizontal navbar -->
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <article>
+      <h1>My Tweets</h1>
+
+      <!-- Embedded tweet example -->
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">
+          Just setting up my Twitter. #myfirstTweet
+        </p>&mdash; Twitter (@Twitter) 
+        <a href="https://twitter.com/Twitter/status/20?ref_src=twsrc%5Etfw">March 21, 2006</a>
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      <!-- Button link back to homepage -->
+      <p><a href="index.html" class="btn">Go back to Homepage</a></p>
+    </article>
+
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Made by Uwera Delhi Adeline - <a href="https://www.adelportfolio.com" target="_blank">here</a></p>
+  </footer>
+
 </body>
-
 </html>
+

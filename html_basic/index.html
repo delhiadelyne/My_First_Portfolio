@@ -1,29 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My First Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <style>
+
+    /* Navbar styling */
+
+    header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+    }
+
+    header ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    header ul li a:hover {
+      color: #1DA1F2;
+    }
+
+    /* Optional: main content spacing */
+    main {
+      padding: 20px;
+    }
+
+    /* Button styling */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1DA1F2;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #0d8ddb;
+    }
+
+  </style>
 </head>
+
 <body>
-  <h1>Welcome to My Portfolio</h1>
 
-  <p>This is the first paragraph introducing myself and my journey into technology.</p>
-  <p>The second paragraph explains my passion for building projects and solving problems.</p>
+  <!-- Header with horizontal navbar -->
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+  </header>
 
-  <h2>My Learning Journey</h2>
-  <p>The third paragraph talks about the skills I’ve gained through practice and study.</p>
+  <!-- Main content -->
+  <main>
+    <article>
+      <h1>Welcome to My Portfolio</h1>
 
-  <h3>Future Goals</h3>
-  <p>The fourth paragraph describes my future goals in tech and innovation.</p>
+      <p>This is the first paragraph introducing myself and my journey into technology.</p>
+      <p>The second paragraph explains my passion for building projects and solving problems.</p>
 
-  <a href="https://www.alxafrica.com/" target="_blank">
-    <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" width="200" />
-  </a>
+      <h2>My Learning Journey</h2>
+      <p>The third paragraph talks about the skills I’ve gained through practice and study.</p>
 
-   <!-- Link to tweets.html -->
-  <p><a href="tweets.html">Check out my Tweets</a></p>
-  
+      <h3>Future Goals</h3>
+      <p>The fourth paragraph describes my future goals in tech and innovation.</p>
+
+      <a href="https://www.alxafrica.com/" target="_blank">
+        <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" width="200" />
+      </a>
+
+      <!-- Button link to tweets.html -->
+      <p><a href="tweets.html" class="btn">Check out my Tweets</a></p>
+    </article>
+
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Made by Uwera Delhi Adeline - <a href="https://www.adelportfolio.com" target="_blank">here</a></p>
+  </footer>
+
 </body>
-
 </html>
